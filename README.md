@@ -1,5 +1,6 @@
 <p align="center">
   <img src="assets/img/logo.jpg" width="150">
+style="border-radius: 50%;">
 </p>
 
 # Acerca de mí
@@ -10,9 +11,11 @@
 ### Habilidades blandas
 **Comunicación efectiva | Resolución de problemas | Orientación a resultados | Pensamiento analítico | Adaptabilidad | Manejo de presión | Escucha activa**
 
-e-mail: sebastianor2099@gmail.com
-
 [LinkedIn](https://www.linkedin.com/in/sebastian-oropeza-ramirez)
+
+[GitHub](https://github.com/sgcuervo)
+
+e-mail: sebastianor2099@gmail.com
 
 ***
 
@@ -71,3 +74,6 @@ En este proyecto se analiza el comportamiento del mercado de videojuegos a parti
 
 3. **Consolas populares a nivel global por region:** Aunque las plataformas fueron seleccionadas por su éxito global, su desempeño no es uniforme por región, mostrando variaciones claras en qué mercado impulsa sus ventas. Incluso al trabajar con plataformas globalmente exitosas, es necesario adaptar estrategias por región, ya que el mercado que impulsa el rendimiento puede variar significativamente.
 ![Global Platform sales per region bar chart](assets/img/p01_top_platforms_region.png)
+
+
+**Visita el [repositorio completo](https://github.com/sgcuervo/videogame-sales-analysis) para mas detalles**
