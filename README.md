@@ -59,7 +59,13 @@ En este proyecto se analiza el comportamiento del mercado de videojuegos a parti
 6. Diseñar estrategias integradas (no aisladas). Tomar decisiones considerando en conjunto plataforma, género, región y timing, en lugar de optimizar una sola variable.
 
 ### Visualizaciones destacadas
-1. **Ciclo de vida por plataforma:** El análisis del periodo 2007–2015 muestra que las ventas de videojuegos siguen patrones consistentes de crecimiento, pico y declive por plataforma. El mercado se mantiene activo mientras exista relevo tecnológico, la clave no es identificar plataformas específicas, sino reconocer en qué fase del ciclo general se encuentra la industria para tomar decisiones comerciales oportunas.
-![
+1. **Ciclo de vida por plataforma:** El análisis del periodo 2007–2015 muestra que las ventas de videojuegos siguen patrones consistentes de crecimiento, pico y declive por plataforma. Las caídas individuales de plataformas no implican una contracción inmediata del mercado, sino una transición hacia nuevas generaciones de consolas. Esto indica que el mercado se mantiene activo mientras exista relevo tecnológico, y que la clave no es identificar plataformas específicas, sino reconocer en qué fase del ciclo general se encuentra la industria para tomar decisiones comerciales oportunas.
+![Platform life time line](assets/img/p01_2007_top_platform_sales.png)
+
+2.**Ventas globales por plataforma:** La mayoría de los juegos presentan ventas bajas en todas las plataformas, con distribuciones fuertemente sesgadas hacia valores pequeños. Las diferencias entre plataformas se manifiestan principalmente en la dispersión y en la presencia de valores atípicos, lo que indica que el desempeño comercial depende de pocos títulos extremadamente exitosos. Las ventas promedio se mantienen bajas y similares entre plataformas, por lo que el mercado presenta un alto nivel de riesgo y dependencia de éxitos puntuales.
+![Global Sales Boxplot](assets/img/p01_boxplot_total_sales_platform.png)
+
+3. **Consolas populares a nivel global por region:** Aunque las plataformas fueron seleccionadas por su éxito global, su desempeño no es uniforme por región, mostrando variaciones claras en qué mercado impulsa sus ventas. Incluso al trabajar con plataformas globalmente exitosas, es necesario adaptar estrategias por región, ya que el mercado que impulsa el rendimiento puede variar significativamente.
+![Global Platform sales per region bar chart](assets/img/p01_top_platforms_region.png)
 
   
