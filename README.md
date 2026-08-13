@@ -3,77 +3,160 @@
 style="border-radius: 50%;">
 </p>
 
-# Acerca de mí
+# Sebastián Oropeza — Data Analyst
 
-### Habilidades tecnológicas
-  **Excel | SQL | Python**
+Data Analyst con formación en TripleTen y proyectos aplicados en machine 
+learning, marketing analytics y A/B testing. Trabajo con Python, SQL y 
+Tableau para limpiar, estructurar y visualizar datos que respalden 
+decisiones de negocio.
 
-### Habilidades blandas
-**Comunicación efectiva | Resolución de problemas | Orientación a resultados | Pensamiento analítico | Adaptabilidad | Manejo de presión | Escucha activa**
+He desarrollado un modelo predictivo de churn con 90% de accuracy sobre 
+4,000 clientes, identificado una ineficiencia de $141,321 en campañas de 
+marketing y auditado pruebas A/B detectando problemas de ejecución que 
+invalidaban sus conclusiones.
 
-[LinkedIn](https://www.linkedin.com/in/sebastian-oropeza-ramirez)
+**Inglés C1 (EFSET)** — disponible para roles remotos, híbridos y presenciales.
 
-[GitHub](https://github.com/sgcuervo)
+---
 
-e-mail: sebastianor2099@gmail.com
+### Habilidades técnicas
+**Lenguajes:** Python (Pandas, NumPy, Scipy, Seaborn, Matplotlib) | SQL
+
+**Visualización:** Tableau | Excel | Google Sheets
+
+**Análisis:** Estadística inferencial | Análisis de cohortes | A/B Testing | Machine Learning básico
+
+**Otros:** Pipelines de datos | Web Scraping (BeautifulSoup) | Git & GitHub
+
+---
+
+### Contacto
+[LinkedIn](https://www.linkedin.com/in/sebastian-oropeza-ramirez) | 
+[GitHub](https://github.com/sgcuervo) | 
+[Portafolio](https://sgcuervo.github.io/) | 
+sebastianor2099@gmail.com
 
 ***
 
 # Proyectos seleccionados
 
-## Análisis de ventas de videojuegos para campaña de marketing
-En este proyecto se analiza el comportamiento del mercado de videojuegos a partir de datos históricos de ventas, plataformas, géneros y clasificaciones por edad, con el objetivo de identificar patrones relevantes entre distintas regiones. A través de visualizaciones exploratorias y pruebas estadísticas, se evalúa cómo factores como la región, el tipo de plataforma, el género y la clasificación ESRB influyen en el desempeño comercial y en la percepción de los usuarios, con el fin de extraer conclusiones útiles para la toma de decisiones estratégicas para futuras campañas publicitarías de la tienda online Ice.
+## Predicción de Churn en Gimnasios — Model Fitness
+Model Fitness pierde clientes silenciosamente: se van sin cancelar, 
+simplemente dejan de asistir. El gimnasio necesita identificar quién 
+está en riesgo antes de que desaparezca, y diseñar intervenciones 
+específicas para cada perfil de cliente.
 
 ### Herramientas y tipo de proyecto
-![Python](https://img.shields.io/badge/python-357ebd?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23357ebd.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23357ebd.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![SciPy](https://img.shields.io/badge/SciPy-%23357ebd.svg?style=for-the-badge&logo=scipy&logoColor=white)
-![Limpieza de datos](https://img.shields.io/badge/Limpieza_de_datos-295F98?style=for-the-badge)
-![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-295F98?style=for-the-badge)
-![Análisis de datos](https://img.shields.io/badge/Análisis_de_datos-295F98?style=for-the-badge)
-![Pruebas de hipótesis](https://img.shields.io/badge/Pruebas_de_hipótesis-295F98?style=for-the-badge)
-![Visualización de datos](https://img.shields.io/badge/Visualización_de_datos-295F98?style=for-the-badge)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-blue?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/SEABORN-blue?style=for-the-badge)
+![Limpieza de Datos](https://img.shields.io/badge/LIMPIEZA_DE_DATOS-blue?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/MACHINE_LEARNING-blue?style=for-the-badge)
+![Clustering](https://img.shields.io/badge/CLUSTERING-blue?style=for-the-badge)
+![Análisis de Datos](https://img.shields.io/badge/AN%C3%81LISIS_DE_DATOS-blue?style=for-the-badge)
+![Visualización de Datos](https://img.shields.io/badge/VISUALIZACI%C3%93N_DE_DATOS-blue?style=for-the-badge)
 
 ## Preguntas clave:
-1. ¿Qué variables explican mayores ventas globales?
-2. ¿Qué plataformas y géneros ofrecen mayor potencial de crecimiento?
-3. ¿Cómo varían las preferencias por región?
-4. ¿Las reseñas predicen el éxito comercial?
+1. ¿Qué variables predicen mejor la cancelación de una membresía?
+2. ¿Cuándo ocurre la deserción y qué la desencadena?
+3. ¿Qué perfiles de cliente existen y cuál es su nivel de riesgo?
+4. ¿Qué estrategias concretas pueden reducir el churn por segmento?
 
 ## Metodología
-- **Preparación de datos:** Limpieza y estandarización para asegurar consistencia en el análisis de ventas, reseñas y plataformas.
-- **Análisis de ventas:** Evaluación de variables clave (plataforma, género, reseñas) para identificar qué factores influyen en el éxito comercial.
-- **Segmentación regional:** Comparación de preferencias en NA, EU y JP para orientar estrategias de mercado específicas.
-- **Validación estadística:** Pruebas de hipótesis para confirmar diferencias significativas en calificaciones entre plataformas y géneros.
+- **Análisis exploratorio:** Identificación de variables con mayor poder 
+  predictivo y detección de multicolinealidad crítica entre pares de 
+  variables (correlaciones de 0.95 y 0.97).
+- **Modelado predictivo:** Entrenamiento y comparación de Regresión 
+  Logística y Random Forest sobre dataset de 4,000 clientes. Selección 
+  del modelo final basada en Recall como métrica prioritaria.
+- **Segmentación:** Clustering con K-Means validado con dendrograma 
+  jerárquico para determinar número óptimo de clústeres (5).
+- **Recomendaciones:** Traducción de hallazgos en estrategias de retención 
+  diferenciadas por segmento.
 
 ## Insights clave:
-1. Éxito = consistencia, no pico. Las plataformas más rentables no son las que alcanzan mayores picos de ventas, sino aquellas que mantienen ingresos sostenidos en el tiempo.
-2. El mercado no cae, se transforma. La caída de una plataforma no implica una contracción del mercado, sino una transición hacia nuevas generaciones.
-3. Mercado “hit-driven” (alto riesgo). La mayoría de los juegos genera bajas ventas; el mercado depende de pocos títulos altamente exitosos.
-4. La plataforma define el éxito. Un mismo juego puede tener resultados muy distintos según la plataforma debido a su base de usuarios.
-5. Diferencias regionales claras (NA/EU vs JP). Norteamérica y Europa presentan mercados similares y de alto volumen, mientras que Japón es más pequeño y altamente específico en preferencias.
-6. El éxito es multifactorial. El desempeño comercial depende de la interacción entre plataforma, género, región y timing, no de una sola variable.
+1. **El primer mes es la ventana crítica.** El tiempo de vida promedio 
+de un cliente que cancela es de 0.99 meses — se van en su primera 
+experiencia. Quienes superan el tercer mes muestran lealtad prolongada.
+
+2. **La asistencia semanal es la señal de alerta más temprana.** Los 
+usuarios en riesgo reducen su frecuencia a 1 visita o menos por semana 
+en el mes de cancelación. Una asistencia de 3 o más veces por semana 
+reduce la probabilidad de abandono a casi cero.
+
+3. **Los contratos cortos son volátiles por naturaleza.** Los clientes 
+que cancelan promedian contratos de 1.7 meses; los leales, 5.7 meses.
+
+4. **Los vínculos sociales y corporativos retienen más que cualquier 
+descuento.** Solo el 18.3% de los clientes que se van llegó referido 
+por un amigo, contra el 35.3% de los leales.
+
+5. **La Regresión Logística superó al Random Forest como modelo final.**
+
+   | Métrica | Regresión Logística | Random Forest |
+   |---|---|---|
+   | Accuracy | 90.0% | 89.6% |
+   | Recall | 81.8% | 75.2% |
+   | Precisión | 78.6% | 81.4% |
+
+6. **Cinco segmentos identificados con tasas de churn desde 0% hasta 58.2%.**
+
+   | Clúster | Perfil | Churn |
+   |---|---|---|
+   | 0 — Golondrina | Contratos cortos, sin vínculos, perfil joven | 58.2% |
+   | 3 — Foráneos | Viven lejos del gimnasio | 40.8% |
+   | 2 — Red Social | 100% referidos o convenio corporativo | 12.9% |
+   | 1 — Premium | Contratos largos, alto consumo adicional | 3.2% |
+   | 4 — VIP | Clientes históricos, hábito consolidado | 0.0% |
 
 ## Recomendaciones:
-1. Priorizar plataformas con base de usuarios consolidada. Enfocar lanzamientos en plataformas en fase madura para maximizar estabilidad de ingresos, en lugar de depender de plataformas nuevas con adopción incierta.
-2. Alinear lanzamientos con ciclos de mercado. Planificar campañas y releases considerando transiciones entre generaciones de consolas para aprovechar picos de demanda.
-3. Diversificar el portafolio de juegos. Reducir el riesgo del modelo “hit-driven” distribuyendo inversión en múltiples títulos en lugar de apostar por pocos lanzamientos.
-4. Optimizar la selección de plataformas por juego. Adaptar el lanzamiento de cada título a las plataformas con mayor base activa de usuarios para maximizar ventas potenciales.
-5. Implementar estrategias regionales diferenciadas.
-   - NA y EU: campañas amplias enfocadas en volumen.
-   - JP: estrategias específicas alineadas con preferencias locales
-6. Diseñar estrategias integradas (no aisladas). Tomar decisiones considerando en conjunto plataforma, género, región y timing, en lugar de optimizar una sola variable.
+1. **Programa de onboarding para primeros 60 días** — sesión gratuita 
+con entrenador en la primera semana y alerta automática si la asistencia 
+cae por debajo de 2 visitas en la primera quincena.
+2. **Campaña de conversión a contratos largos** — descuento para usuarios 
+mensuales que completen su primer mes, incentivando el salto a membresías 
+semestrales o anuales.
+3. **Club de recompensas por asistencia** — puntos canjeables en cafetería 
+y tienda para premiar consistencia y usar servicios adicionales como ancla 
+de hábito diario.
+4. **Expansión del canal corporativo y social** — nuevos convenios con 
+empresas del vecindario y optimización del programa "Trae a un amigo".
 
 ### Visualizaciones destacadas
-1. **Ciclo de vida por plataforma:** El análisis del periodo 2007–2015 muestra que las ventas de videojuegos siguen patrones consistentes de crecimiento, pico y declive por plataforma. Las caídas individuales de plataformas no implican una contracción inmediata del mercado, sino una transición hacia nuevas generaciones de consolas. Esto indica que el mercado se mantiene activo mientras exista relevo tecnológico, y que la clave no es identificar plataformas específicas, sino reconocer en qué fase del ciclo general se encuentra la industria para tomar decisiones comerciales oportunas.
-![Platform life time line](assets/img/p01_2007_top_platform_sales.png)
 
-2. **Ventas globales por plataforma:** La mayoría de los juegos presentan ventas bajas en todas las plataformas, con distribuciones fuertemente sesgadas hacia valores pequeños. Las diferencias entre plataformas se manifiestan principalmente en la dispersión y en la presencia de valores atípicos, lo que indica que el desempeño comercial depende de pocos títulos extremadamente exitosos. Las ventas promedio se mantienen bajas y similares entre plataformas, por lo que el mercado presenta un alto nivel de riesgo y dependencia de éxitos puntuales.
-![Global Sales Boxplot](assets/img/p01_boxplot_total_sales_platform.png)
+1. **Mapa de calor de correlaciones entre variables**
+![Mapa de calor](assets/img/p01_correlation_heatmap.png)
+El análisis del mapa de calor revela que la gran mayoría de las características no presentan correlaciones significativas entre sí. Sin embargo, se detectan dos casos críticos de multicolinealidad fuerte (valores superiores a **0.90**):
 
-3. **Consolas populares a nivel global por region:** Aunque las plataformas fueron seleccionadas por su éxito global, su desempeño no es uniforme por región, mostrando variaciones claras en qué mercado impulsa sus ventas. Incluso al trabajar con plataformas globalmente exitosas, es necesario adaptar estrategias por región, ya que el mercado que impulsa el rendimiento puede variar significativamente.
-![Global Platform sales per region bar chart](assets/img/p01_top_platforms_region.png)
+`contract_period` y `month_to_end_contract` (**0.97**): Relación lineal casi perfecta debido a la naturaleza del vencimiento de las membresías.
+`avg_class_frequency_total` y `avg_class_frequency_current_month` (**0.95**): Alta dependencia entre el comportamiento histórico de asistencia y el del mes en curso.
+Para evitar distorsiones en los coeficientes del modelo de Regresión Logística, se recomienda eliminar una variable de cada par (`month_to_end_contract` y `avg_class_frequency_total`) antes de proceder con el entrenamiento de los modelos predictivos.
 
+2. **Dendrograma jerárquico**
+![Dendrograma](assets/img/p01_dendrogram.png)
+El gráfico jerárquico muestra una estructura de agrupamiento clara:
 
-**Visita el [repositorio completo](https://github.com/sgcuervo/videogame-sales-analysis) para mas detalles**
+- **Grupos Principales**: Se identifican inicialmente 4 grandes bloques de color en la base (naranja, verde, rojo y morado).
+
+- **Justificación de los 5 Clústeres**: Al analizar la rama morada de la derecha, se observa una división sumamente marcada en dos sub-ramas principales alrededor de la altura 60. Separar este bloque masivo en dos subgrupos independientes nos permite obtener una segmentación más precisa y detallada. Por lo tanto, se justifica matemáticamente fijar el algoritmo en **5 clústeres** para el análisis posterior con K-Means.
+
+3. **Tasa de churn por clúster**
+![Churn por clúster](assets/img/p01_churn_rate.png)
+Al ejecutar el aislamiento de la tasa de deserción por grupo, se obtienen las siguientes respuestas clave para el negocio:
+
+1. **¿Difieren en términos de tasa de cancelación?** Sí, difieren de manera drástica y polarizada. La base de clientes de Model Fitness se divide en dos extremos muy claros: grupos con una retención casi perfecta y grupos con una fuga masiva de usuarios.
+
+2. **¿Qué grupos son propensos a irse?**
+- **Clúster 0 (Riesgo Crítico):** Presenta la tasa de cancelación más alta del gimnasio con un **58.2%**. Es el grupo prioritario a intervenir.
+- **Clúster 3 (Riesgo Moderado-Alto):** Registra una tasa de deserción del **40.8%**, impulsada principalmente por la barrera geográfica (usuarios lejanos).
+
+3. **¿Cuáles son leales?**
+- **Clúster 4 (Lealtad Absoluta):** Muestra una tasa de cancelación del **0.0%**. Son los clientes históricos más consolidados del club.
+- **Clúster 1 (Alta Lealtad):** Registra apenas un **3.2%** de deserción, caracterizado por su alto consumo en servicios adicionales y contratos de largo plazo.
+- **Clúster 2 (Alta Lealtad Social):** Presenta un **12.9%** de bajas, respaldado por la efectividad de las membresías corporativas y el programa de referidos.
+
+**Visita el [repositorio completo](https://github.com/sgcuervo/model-fitness-machine-learning) para más detalles.**
