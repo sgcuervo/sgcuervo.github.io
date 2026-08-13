@@ -183,3 +183,109 @@ Al ejecutar el aislamiento de la tasa de deserción por grupo, se obtienen las s
 - **Clúster 2 (Alta Lealtad Social):** Presenta un **12.9%** de bajas, respaldado por la efectividad de las membresías corporativas y el programa de referidos.
 
 **Visita el [repositorio completo](https://github.com/sgcuervo/model-fitness-machine-learning) para más detalles.**
+
+---
+
+## Análisis de Marketing y Comportamiento de Usuarios — Showz
+Showz invierte $329,131 en marketing pero no sabe qué canales realmente 
+funcionan. El canal que consume el 42.9% del presupuesto genera el ROMI 
+más bajo del período, mientras el más rentable recibe una fracción mínima 
+de inversión. Este análisis identifica dónde está el dinero mal asignado 
+y qué hacer al respecto.
+
+### Herramientas y tipo de proyecto
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-blue?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/SEABORN-blue?style=for-the-badge)
+![Limpieza de Datos](https://img.shields.io/badge/LIMPIEZA_DE_DATOS-blue?style=for-the-badge)
+![Análisis de Datos](https://img.shields.io/badge/AN%C3%81LISIS_DE_DATOS-blue?style=for-the-badge)
+![Visualización de Datos](https://img.shields.io/badge/VISUALIZACI%C3%93N_DE_DATOS-blue?style=for-the-badge)
+![Análisis de Cohortes](https://img.shields.io/badge/AN%C3%81LISIS_DE_COHORTES-blue?style=for-the-badge)
+![Métricas de Negocio](https://img.shields.io/badge/M%C3%89TRICAS_DE_NEGOCIO-blue?style=for-the-badge)
+
+## Preguntas clave:
+1. ¿Cómo interactúan los usuarios con la plataforma y cuánto tiempo 
+   tardan en convertir?
+2. ¿Cuándo y cuánto compran — existe estacionalidad relevante?
+3. ¿Qué canales de marketing generan mayor retorno sobre la inversión?
+4. ¿Qué cohortes de usuarios generan mayor valor de vida (LTV)?
+
+## Metodología
+- **Preparación de datos:** Se eliminaron sesiones mayores a 30 minutos 
+  (7.76% del total) por representar navegadores abandonados. Se usó la 
+  mediana como métrica central en distribuciones con sesgo positivo.
+- **Análisis de comportamiento:** Estudio del embudo de conversión, 
+  frecuencia de sesiones y tiempo hasta primera compra.
+- **Análisis de cohortes:** Seguimiento del LTV y retención por grupo 
+  de usuarios a lo largo del tiempo.
+- **Métricas de marketing:** Cálculo de CAC, ROMI y LTV por fuente de 
+  adquisición para evaluar eficiencia del presupuesto.
+
+**Nota:** El dataset no cubre el período completo — los primeros y últimos 
+meses pueden mostrar valores atípicos por datos parciales.
+
+## Insights clave:
+1. **El usuario de Showz llega con intención de compra.** El 67.9% 
+convierte el mismo día de su primera visita. La media de 17.42 días 
+revela un segmento que tarda más — oportunidad directa para retargeting.
+
+2. **La tasa de conversión del 14.62% supera 4x al ecommerce general 
+(1-4%).** Pero más visitas no garantizan más conversiones: noviembre 2017 
+fue el mes de mayor actividad y no coincidió con el pico de conversión.
+
+3. **La estacionalidad navideña es predecible y aprovechable.** Diciembre 
+2017 registró el pico de ventas y la cohorte de septiembre 2017 mostró 
+un salto notable en su tercer mes — exactamente diciembre.
+
+4. **La retención cae drásticamente después del primer mes.** De 13-15% 
+en el mes 0 a menos del 2% en meses siguientes. Showz opera con una base 
+principalmente transaccional.
+
+5. **El hallazgo más crítico: la fuente 3 es la más cara y la menos 
+rentable.**
+
+   | Fuente | Inversión | CAC | ROMI |
+   |---|---|---|---|
+   | Fuente 3 | $141,321 (42.9%) | 10.21 | 1.10 |
+   | Fuente 1 | $20,833 | 2.92 | 109.31 |
+   | Fuente 9 | Reducida | 1.98 | 5.59 |
+   | Fuente 7 | Con costos | — | 0 compradores |
+
+   *La fuente 1 genera 99x más retorno que la fuente 3 con una fracción 
+   del presupuesto.*
+
+## Recomendaciones estratégicas:
+1. **Reasignar presupuesto de fuente 3 hacia fuente 1** — mayor impacto 
+inmediato en rentabilidad sin incrementar gasto total.
+2. **Investigar fuentes 6 y 7** — la fuente 7 registra costos sin 
+compradores asociados.
+3. **Incrementar inversión en fuente 9** — mejor rendimiento que fuentes 
+con presupuesto similar.
+4. **Concentrar inversión entre septiembre y diciembre** para aprovechar 
+la estacionalidad identificada.
+5. **Diseñar campaña de retargeting para el 32.1% que no convierte el 
+primer día** — intención demostrada, necesita un empujón adicional.
+
+### Visualizaciones destacadas
+
+1. **Gráfico de ROMI por fuente de adquisición**
+![ROMI por fuente](assets/img/p02_romi_barplot.png)
+La fuente 3 presenta el ROMI más bajo (1.10) a pesar de concentrar el 42.9% del presupuesto total (**$141,321**). Esta disparidad es crítica: la fuente con mayor inversión es la menos rentable, lo que no justifica su nivel de gasto actual.
+
+La fuente 1, con una inversión considerablemente menor (**$20,833**), genera el ROMI más alto del período (109.31), lo que la convierte en la fuente más eficiente. Se recomienda redirigir gradualmente parte del presupuesto de la fuente 3 hacia la fuente 1.
+
+La fuente 9, aunque con presupuesto reducido, muestra mejor rendimiento que la fuente 10 con inversión similar (ROMI 5.59 vs 1.51). Incrementar gradualmente su presupuesto y analizar el perfil de sus usuarios podría revelar oportunidades de crecimiento.
+
+2. **Mapa de calor de LTV por cohorte y mes de vida**
+![LTV por cohorte](assets/img/p02_ltv_by_cohort_heatmap.png)
+Las cohortes de 2017 presentan un LTV mayor al de las cohortes de 2018, lo cual es esperado dado su mayor tiempo de vida en la plataforma. Destacan dos cohortes: junio 2017 por su crecimiento sostenido a lo largo del tiempo, y septiembre 2017 por un salto notable en su tercer mes de vida, que corresponde a diciembre, consistente con la estacionalidad navideña identificada anteriormente.
+
+Se observan períodos de estancamiento en varias cohortes, donde el LTV acumulado deja de crecer, indicando que los usuarios dejaron de comprar. Identificar en qué mes ocurre este estancamiento para cada cohorte podría ayudar al equipo de marketing a diseñar campañas de reactivación dirigidas justo antes de ese punto.
+
+3. **Gráfico de retención por cohorte**
+![Retención por cohorte](assets/img/p02_retention_rate_by_cohort_heatmap.png)
+La tasa de retención cae drásticamente después del primer mes, pasando de ~13-15% en el mes 0 a menos del 2% en los meses siguientes para todas las cohortes. Esto confirma que Showz tiene una base de usuarios principalmente transaccional, donde la mayoría compra una sola vez. El equipo de marketing debería explorar estrategias de retención como campañas de reactivación y programas de fidelización para incrementar las compras recurrentes
+
+**Visita el [repositorio completo](https://github.com/sgcuervo/showz-marketing-analysis) para más detalles.**
