@@ -4,7 +4,6 @@ style="border-radius: 50%;">
 </p>
 
 # Sebastián Oropeza — Data Analyst
-
 Data Analyst con formación en TripleTen y proyectos aplicados en machine 
 learning, marketing analytics y A/B testing. Trabajo con Python, SQL y 
 Tableau para limpiar, estructurar y visualizar datos que respalden 
@@ -15,26 +14,50 @@ He desarrollado un modelo predictivo de churn con 90% de accuracy sobre
 marketing y auditado pruebas A/B detectando problemas de ejecución que 
 invalidaban sus conclusiones.
 
-**Inglés C1 (EFSET)** — disponible para roles remotos, híbridos y presenciales.
+Inglés C1 (EFSET) — disponible para roles remotos, híbridos y presenciales.
 
 ---
 
 ### Habilidades técnicas
-**Lenguajes:** Python (Pandas, NumPy, Scipy, Seaborn, Matplotlib) | SQL
 
-**Visualización:** Tableau | Excel | Google Sheets
+**Lenguajes:**
 
-**Análisis:** Estadística inferencial | Análisis de cohortes | A/B Testing | Machine Learning básico
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+![Seaborn](https://img.shields.io/badge/SEABORN-blue?style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-blue?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-**Otros:** Pipelines de datos | Web Scraping (BeautifulSoup) | Git & GitHub
+**Visualización:**
+
+![Tableau](https://img.shields.io/badge/TABLEAU-E97627?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
+
+**Análisis:**
+
+![Estadística Inferencial](https://img.shields.io/badge/ESTAD%C3%8DSTICA_INFERENCIAL-blue?style=for-the-badge)
+![Análisis de Cohortes](https://img.shields.io/badge/AN%C3%81LISIS_DE_COHORTES-blue?style=for-the-badge)
+![A/B Testing](https://img.shields.io/badge/A%2FB_TESTING-blue?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/MACHINE_LEARNING-blue?style=for-the-badge)
+
+**Otros:**
+
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BEAUTIFULSOUP-darkgreen?style=for-the-badge)
+![Pipelines de Datos](https://img.shields.io/badge/PIPELINES_DE_DATOS-blue?style=for-the-badge)
 
 ---
 
 ### Contacto
-[LinkedIn](https://www.linkedin.com/in/sebastian-oropeza-ramirez) | 
-[GitHub](https://github.com/sgcuervo) | 
-[Portafolio](https://sgcuervo.github.io/) | 
-sebastianor2099@gmail.com
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-oropeza-ramirez)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sgcuervo)
+📧 sebastianor2099@gmail.com
 
 ***
 
