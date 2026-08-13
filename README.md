@@ -151,15 +151,16 @@ empresas del vecindario y optimización del programa "Trae a un amigo".
 
 ### Visualizaciones destacadas
 
-1. **Mapa de calor de correlaciones entre variables**
+**Mapa de calor de correlaciones entre variables**
 ![Mapa de calor](assets/img/p01_correlation_heatmap.png)
 El análisis del mapa de calor revela que la gran mayoría de las características no presentan correlaciones significativas entre sí. Sin embargo, se detectan dos casos críticos de multicolinealidad fuerte (valores superiores a **0.90**):
 
-`contract_period` y `month_to_end_contract` (**0.97**): Relación lineal casi perfecta debido a la naturaleza del vencimiento de las membresías.
-`avg_class_frequency_total` y `avg_class_frequency_current_month` (**0.95**): Alta dependencia entre el comportamiento histórico de asistencia y el del mes en curso.
+- `contract_period` y `month_to_end_contract` (**0.97**): Relación lineal casi perfecta debido a la naturaleza del vencimiento de las membresías.
+- `avg_class_frequency_total` y `avg_class_frequency_current_month` (**0.95**): Alta dependencia entre el comportamiento histórico de asistencia y el del mes en curso.
+
 Para evitar distorsiones en los coeficientes del modelo de Regresión Logística, se recomienda eliminar una variable de cada par (`month_to_end_contract` y `avg_class_frequency_total`) antes de proceder con el entrenamiento de los modelos predictivos.
 
-2. **Dendrograma jerárquico**
+**Dendrograma jerárquico**
 ![Dendrograma](assets/img/p01_dendrogram.png)
 El gráfico jerárquico muestra una estructura de agrupamiento clara:
 
@@ -167,7 +168,7 @@ El gráfico jerárquico muestra una estructura de agrupamiento clara:
 
 - **Justificación de los 5 Clústeres**: Al analizar la rama morada de la derecha, se observa una división sumamente marcada en dos sub-ramas principales alrededor de la altura 60. Separar este bloque masivo en dos subgrupos independientes nos permite obtener una segmentación más precisa y detallada. Por lo tanto, se justifica matemáticamente fijar el algoritmo en **5 clústeres** para el análisis posterior con K-Means.
 
-3. **Tasa de churn por clúster**
+**Tasa de churn por clúster**
 ![Churn por clúster](assets/img/p01_churn_rate.png)
 Al ejecutar el aislamiento de la tasa de deserción por grupo, se obtienen las siguientes respuestas clave para el negocio:
 
@@ -270,7 +271,7 @@ primer día** — intención demostrada, necesita un empujón adicional.
 
 ### Visualizaciones destacadas
 
-1. **Gráfico de ROMI por fuente de adquisición**
+**Gráfico de ROMI por fuente de adquisición**
 ![ROMI por fuente](assets/img/p02_romi_barplot.png)
 La fuente 3 presenta el ROMI más bajo (1.10) a pesar de concentrar el 42.9% del presupuesto total (**$141,321**). Esta disparidad es crítica: la fuente con mayor inversión es la menos rentable, lo que no justifica su nivel de gasto actual.
 
@@ -278,13 +279,13 @@ La fuente 1, con una inversión considerablemente menor (**$20,833**), genera el
 
 La fuente 9, aunque con presupuesto reducido, muestra mejor rendimiento que la fuente 10 con inversión similar (ROMI 5.59 vs 1.51). Incrementar gradualmente su presupuesto y analizar el perfil de sus usuarios podría revelar oportunidades de crecimiento.
 
-2. **Mapa de calor de LTV por cohorte y mes de vida**
+**Mapa de calor de LTV por cohorte y mes de vida**
 ![LTV por cohorte](assets/img/p02_ltv_by_cohort_heatmap.png)
 Las cohortes de 2017 presentan un LTV mayor al de las cohortes de 2018, lo cual es esperado dado su mayor tiempo de vida en la plataforma. Destacan dos cohortes: junio 2017 por su crecimiento sostenido a lo largo del tiempo, y septiembre 2017 por un salto notable en su tercer mes de vida, que corresponde a diciembre, consistente con la estacionalidad navideña identificada anteriormente.
 
 Se observan períodos de estancamiento en varias cohortes, donde el LTV acumulado deja de crecer, indicando que los usuarios dejaron de comprar. Identificar en qué mes ocurre este estancamiento para cada cohorte podría ayudar al equipo de marketing a diseñar campañas de reactivación dirigidas justo antes de ese punto.
 
-3. **Gráfico de retención por cohorte**
+**Gráfico de retención por cohorte**
 ![Retención por cohorte](assets/img/p02_retention_rate_by_cohort_heatmap.png)
 La tasa de retención cae drásticamente después del primer mes, pasando de ~13-15% en el mes 0 a menos del 2% en los meses siguientes para todas las cohortes. Esto confirma que Showz tiene una base de usuarios principalmente transaccional, donde la mayoría compra una sola vez. El equipo de marketing debería explorar estrategias de retención como campañas de reactivación y programas de fidelización para incrementar las compras recurrentes
 
