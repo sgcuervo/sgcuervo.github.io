@@ -297,6 +297,8 @@ La tasa de retención cae drásticamente después del primer mes, pasando de ~13
 
 **Visita el [repositorio completo](https://github.com/sgcuervo/showz-marketing-analysis) para más detalles.**
 
+---
+
 ## Evaluación de Sistema de Recomendaciones — Test A/B Tienda Online Internacional
 El equipo de producto quiere saber si su nuevo sistema de recomendaciones 
 mejora la conversión. Pero antes de responder esa pregunta, hay otra más 
