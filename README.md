@@ -297,3 +297,108 @@ La tasa de retención cae drásticamente después del primer mes, pasando de ~13
 
 **Visita el [repositorio completo](https://github.com/sgcuervo/showz-marketing-analysis) para más detalles.**
 
+## Evaluación de Sistema de Recomendaciones — Test A/B Tienda Online Internacional
+El equipo de producto quiere saber si su nuevo sistema de recomendaciones 
+mejora la conversión. Pero antes de responder esa pregunta, hay otra más 
+urgente: ¿la prueba fue ejecutada correctamente? Este análisis revela que 
+la respuesta es no — y explica por qué los resultados no son concluyentes.
+
+### Herramientas y tipo de proyecto
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-blue?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/SEABORN-blue?style=for-the-badge)
+![Limpieza de Datos](https://img.shields.io/badge/LIMPIEZA_DE_DATOS-blue?style=for-the-badge)
+![Análisis de Datos](https://img.shields.io/badge/AN%C3%81LISIS_DE_DATOS-blue?style=for-the-badge)
+![Pruebas de Hipótesis](https://img.shields.io/badge/PRUEBAS_DE_HIP%C3%93TESIS-blue?style=for-the-badge)
+![A/B Testing](https://img.shields.io/badge/A%2FB_TESTING-blue?style=for-the-badge)
+
+## Preguntas clave:
+1. ¿La prueba fue ejecutada bajo condiciones válidas para sacar conclusiones?
+2. ¿El sistema de recomendaciones mejoró la conversión en al menos 10% 
+   en cada etapa del embudo?
+3. ¿Las diferencias observadas entre grupos son estadísticamente 
+   significativas?
+4. ¿Qué factores externos pudieron contaminar los resultados?
+
+## Metodología
+- **Auditoría de la prueba:** Verificación de balance entre grupos, 
+  contaminación por eventos de marketing y solapamiento con otras 
+  pruebas activas antes de analizar resultados.
+- **Análisis del embudo:** Construcción de embudo de conversión por 
+  grupo (login → product_page → product_cart → purchase) y cálculo 
+  de diferencias relativas entre grupos.
+- **Validación estadística:** Pruebas Z de proporciones con corrección 
+  de Bonferroni (α = 0.017) para controlar error de tipo I en tres 
+  comparaciones simultáneas.
+
+## Problemas detectados en la ejecución de la prueba:
+1. **Desbalance severo entre grupos** — grupo A con 2,604 usuarios vs 
+   grupo B con 877, proporción de casi 3 a 1 sin explicación en los datos.
+2. **Solapamiento con campaña de marketing activa** — la campaña 
+   *Christmas & New Year Promo* afectó el 10.6% de los eventos registrados.
+3. **Coexistencia de dos pruebas en el mismo dataset** — 441 participantes 
+   registrados en más de una prueba A/B simultáneamente.
+4. **Anomalía en el embudo** — usuarios en `purchase` superan a los de 
+   `product_cart` en ambos grupos, indicando compras directas no 
+   documentadas o errores de registro.
+
+## Insights clave:
+
+1. **El grupo B no alcanzó el umbral de mejora del 10% en ninguna etapa.**
+
+   | Etapa | Grupo A | Grupo B | Diferencia | Significativo |
+   |---|---|---|---|---|
+   | login → product_page | 64.7% | 56.3% | -13% (B menor) | ✅ p = 6.94e-06 |
+   | product_page → product_cart | 46.4% | 49.5% | +6.6% (B mayor) | ❌ p = 0.215 |
+   | product_cart → purchase | — | — | -4.2% (B menor) | ❌ p = 0.047 |
+
+2. **La única diferencia significativa va en dirección contraria al 
+objetivo.** El grupo B convirtió un 13% menos en `product_page` — 
+exactamente donde el sistema de recomendaciones debería brillar.
+
+3. **La actividad por usuario es similar entre grupos.** El grupo B 
+promedia 5.71 eventos por usuario vs 6.79 del grupo A, con distribuciones 
+similares y sin dependencia de usuarios atípicos.
+
+4. **El solapamiento navideño afecta el 10.6% de los datos** pero 
+filtrarlo comprometería aún más la comparabilidad entre grupos dado 
+el desbalance existente.
+
+## Conclusión
+El test A/B no cumplió su objetivo. Se recomienda **no implementar el 
+sistema de recomendaciones** basándose en esta prueba, y repetirla bajo 
+condiciones controladas: grupos balanceados, un único test activo por 
+período y fechas alejadas de campañas de marketing activas.
+
+### Visualizaciones destacadas
+
+1. **Embudo de conversión por grupo (A vs B)**
+![Embudo de conversión](assets/img/p03_convertion_funnel.png)
+
+Se identificó una anomalía en ambos grupos: en el *grupo A* hay **833** usuarios en `purchase` vs **782** en `product_cart`, y en el *grupo B* hay **249** vs **244** respectivamente. Esto indica que algunos usuarios realizaron compras directamente desde `product_page` sin pasar por `product_cart`, lo cual podría ser una funcionalidad de compra directa no documentada o un error de registro. Al ser diferencias marginales respecto al total de participantes, no se eliminarán estos registros.
+
+El hecho de que purchase sea mayor a uno en ambos grupos confirma la anomalía que vimos antes donde hay más compradores que usuarios en `product_cart`
+
+- El *grupo A* convierte mejor de `login` a `product_page` (**64.7% vs 56.3%**)
+
+- El *grupo B* convierte mejor de `product_page` a `product_cart` (**49.5% vs 46.4%**)
+
+2. **Distribución de eventos por usuario y grupo — diagrama de caja**
+![Distribución de eventos](assets/img/p03_events_by_group_and_user_boxplot.png)
+
+Existen valores atípicos en ambos grupos, sin embargo estos afectan poco a los datos ya que las medianas de ambos grupos están cerca de sus valores medios. La distribución de eventos por usuario es bastante similar entre grupos, lo que confirma que la actividad del grupo B es real y no depende únicamente de unos pocos usuarios atípicos. Sin embargo, esto no compensa el desbalance en el número de participantes (**2,604** vs **877**), que sigue siendo una limitación importante de la prueba.
+
+
+3. **Actividad diaria por grupo a lo largo del período**
+![Actividad diaria](assets/img/p03_events_per_day_distribution.png)
+
+La distribución de eventos por día muestra que el grupo A genera consistentemente más eventos que el grupo B, lo cual es atribuible principalmente al mayor número de participantes en ese grupo. El grupo B presenta un comportamiento más estable a lo largo del tiempo.
+
+Se observa un pico de actividad el 21 de diciembre en ambos grupos, fecha que coincide con el último día de registro de nuevos usuarios. La caída de actividad posterior a esa fecha es esperada y no representa una anomalía, ya que refleja la ausencia de nuevos participantes entrando al sistema.
+
+Ambos grupos muestran una caída simultánea al final del período, lo que sugiere un comportamiento orgánico similar entre grupos independientemente del tamaño muestral.
+
+**Visita el [repositorio completo](https://github.com/sgcuervo/ab-test-recommender-system) para más detalles.**
